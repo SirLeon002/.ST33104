@@ -1,1 +1,74 @@
+// กำหนดตัวแปรสีหลัก
+$background-color: #f4f4f4;
+$sidebar-bg: #333;
+$button-bg: #555;
+$button-hover: #777;
+$text-color: white;
+$border-radius: 10px;
 
+// ตั้งค่า body
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: $background-color;
+}
+
+// Sidebar
+aside {
+    width: 25%;
+    background: $sidebar-bg;
+    color: $text-color;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+// ปุ่มเมนู
+button {
+    background: $button-bg;
+    color: $text-color;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+
+    &:hover {
+        background: $button-hover;
+        transform: scale(1.05);
+    }
+}
+
+// คอนเทนต์
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+// Iframe สำหรับวิดีโอ
+iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: $border-radius;
+}
+
+// Input ของ BMI
+input {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: $border-radius;
+    border: 1px solid #ccc;
+}
+
+// ข้อความผลลัพธ์ BMI
+#bmiResult {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
